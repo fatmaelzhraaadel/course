@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add courses</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="head">personal course organizer</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="addcourse.html">ADD COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="add">Add Course</h2>
+            <form class="form"  action="/submit" method="post">
+                <label for="course">Course:</label>
+                <input class="input1" placeholder="Enter course name" type="text" id="course" name="Course" autofocus required>
+                <br>
+                <label for="instructor">Instructor:</label>
+                <input class="input1" placeholder="Enter course instructor" type="text" id="instructor" name="Instructor" required>
+                <br>
+                <label for="credit">Credit Hours:</label>
+                <input class="input1" placeholder="Enter course credit hours" type="text" id="credit" name="creditHours" required>
+                <br>
+                <label for="notes">Notes:</label>
+                <textarea class="input1" placeholder="Extra notes about course.." id="notes" name="note" rows="3" cols="30"></textarea>
+                <br>
+                <section class="but">
+                <input class="input2" type="submit" value="submit">
+                <input class="input2" type="reset" value="reset">
+                </section>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <span class="foot">© 2026 Course Organizer | Made by Fatma Elzahraa Adel</span>
+    </footer>
+</body>
